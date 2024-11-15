@@ -1,0 +1,74 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(212, 215, 226);
+  margin: 0;
+}
+/* Add Event Content Styles */
+.main-containt{
+  margin-left: 250px;
+  position: absolute;
+  top: 0;
+  width: 70%;
+}
+.add-event-page {
+  background-color: #fcfcfc;
+  padding: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.add-event-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1a2b7f;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile view*/
+@media only screen and (max-width:820px){
+  .main-containt{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    margin-left: 0;
+  }
+  .add-event-page{
+    width: 100%;
+    margin-top: 0;
+  }
+
+}

@@ -1,0 +1,147 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(212, 215, 226);
+    margin: 0;
+  }
+  
+  /* Side Menu Styles */
+  .admin-dashboard {
+    display: flex;
+  }
+  
+  .side-menu {
+    width: 250px;
+    height: 120vh;
+    background-color: #010f52;
+    color: #fdfdfd;
+  }
+  
+  .menu-header {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-bottom: 1px solid #555;
+    background-color: rgb(243, 243, 243);
+    color: #1a2b7f;
+  }
+  .logo {
+    width: 150px; /* Set the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* Other styling for your logo */
+  }
+  .menu-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .menu-items li:hover{
+    background-color: #2447fa;
+  }
+  
+  .menu-items li {
+    padding: 15px 20px;
+  }
+  
+  .menu-items li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu-items li a i{
+    margin-right: 5px;
+  }
+  
+  /* Add Event Content Styles */
+  .main-content{
+    margin-left: 250px;
+    position: absolute;
+    top: 0;
+    width: 70%;
+    padding: 20px;
+  }
+.scan-ticket-page {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scan-ticket-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a2b7f;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #01136b;
+    color: #fff;
+  }
+
+  table td{
+    color: #010f52;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a2b7f;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  table button:hover {
+    background-color: #0056b3;
+  }
+  

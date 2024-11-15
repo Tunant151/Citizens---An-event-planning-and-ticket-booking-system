@@ -1,0 +1,123 @@
+/* Basic styling - admin-style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .admin-dashboard {
+    display: flex;
+  }
+
+  .fa-xmark{
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    margin: 3px 0 0 210px;
+    font-size: 25px;
+
+  }
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px;
+  }
+  header{
+    color: #1a2b7f;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: left;
+  }
+  
+  .statistics {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+
+
+
+  .stat-bubble {
+    color: #1a2b7f;
+    padding: 5px;
+    width: auto;
+    margin-right: 100px;
+    height: 60px;
+    border-left: 2px solid #1a2b7f;
+    justify-content: left;
+  }
+  
+  .stat-bubble h3 {
+    margin-top: 0;
+  }
+  
+  .event-table {
+    border-top: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .event-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .event-table th,
+  .event-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .event-table th {
+    background-color: #01136b;
+    color: #fff;
+  }
+
+  /* Mobile View*/
+  @media only screen and (max-width:820px){
+    .main-content{
+      width: 90%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .main-content, header{
+      padding: 8px 4px;
+    }
+
+    .main-content header{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .fa-bars{
+      margin: auto 10px;
+    }
+
+    .fa-xmark{
+      display: block;
+    }
+
+    .statistics{
+      margin: 0;
+      padding: 6px;
+    }
+
+    .stat-bubble p,
+    .stat-bubble h3{
+      margin: 0px;
+    }
+    .stat-bubble p{
+      font-family: monospace;
+      font-size: 20px;
+    }
+
+    .event-table{
+      margin: 0;
+      padding: 0;
+    }
+  }
+  

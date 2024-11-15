@@ -1,0 +1,126 @@
+/* Basic CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .login-form, .signup-form{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form h2, .signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a2b7f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1e3fe9;
+  }
+  
+  /* Styling for "Create Account" span */
+span {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: small;
+  }
+  
+  span a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  span a:hover {
+    text-decoration: underline;
+    color:#cf2b0e;
+  }
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+  
+  .logo {
+    width: 200px; /* Set the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* Other styling for your logo */
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 18px;
+  }
+
+  /* Style for the select dropdown when focused */
+  select:focus {
+    border-color: #1b1b1b;
+  }
+
+  @media screen and (max-width: 800px) {
+    .logo {
+        width: 100px; /* Set the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        /* Other styling for your logo */
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; /* Adjust the margin as needed */
+      }
+  }

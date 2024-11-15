@@ -1,0 +1,31 @@
+<?php
+// Start the session
+session_start();
+
+$servername = "locahost"; // Replace with your server name or IP address
+$username = "root"; // Replace with your database username
+$password = ""; // Replace with your database password
+$dbname = "citizens"; // Replace with your database name
+
+try {
+    // Create a PDO instance
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // Set PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // Check if the session is NOT set
+    if (!isset($_SESSION['user_id'])) {
+        // Redirect to the login page if session is not set
+        header("Location: login.php");
+        exit(); // Ensure that no other code is executed after redirection
+    }
+    // If the session is set, the user is logged in and can continue accessing the page
+
+    // Other database operations can be performed here using $conn
+    
+    // JavaScript alert for successful connection
+    echo '<script>alert("Connected successfully");</script>';
+} catch (PDOException $e) {
+    // JavaScript alert for connection failure
+    echo '<script>alert("Connection failed: ' . $e->getMessage() . '");</script>';
+}
+?>

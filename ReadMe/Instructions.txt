@@ -1,0 +1,44 @@
+Note: The name has been changed from  citizens --> citizens --> citizens
+use citizens (localhost/citizens)
+
+                *******************************************************
+                                    IMPORTANT
+                *******************************************************
+
+SETUP:
+
+1. Create a database called: citizens
+
+2.import .sql file in "sql database file" folder in the project
+
+3. In the resources folder you will find the fonts used for this project
+- install them by just clicking them
+
+
+                *******************************************************
+                                ACCOUNTS AND PASSWORDS
+                *******************************************************
+
+Admin
+username: admin
+password: admin
+
+Steward
+username: steward
+password: steward
+
+Stakeholder
+
+//this holder holds all current system events
+username: stakeholder
+password: stakeholder
+
+//holds a few events (2)
+username: stakeholder1
+password: stakeholder1
+
+//holds no event
+username: stakeholder2
+password: stakeholder2
+
+Please note that the stakes(Events held by a stake holder can be added by the admin)

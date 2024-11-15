@@ -1,0 +1,225 @@
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(Resources/Roboto/Roboto-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins'), local('Poppins-Regular'), url(Resources/Poppins/Poppins-Regular.ttf) format('truetype');
+  }
+  
+  /* Banner style */
+ .banner {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #1a2b7f;
+    width: 80%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+  
+  .banner h1{
+    font-size: large;
+    text-align: left;
+    }
+      
+  .banner h1 span{
+    font-size: x-large;
+    color: #1a2b7f;
+    font-style: bold;
+    text-align: left;
+    }
+  
+  .logo{
+    background: transparent;
+    width: 130px;
+    height: auto;
+    }
+  
+  
+    /* Page */
+    .ticket-page{
+      width: 60%;
+      margin-top: 1%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .event-details {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .event-description h2{
+      margin-bottom: 70px;
+    }
+  
+    .event-image {
+    /* display: block;
+    margin: 0 auto; This centers the image horizontally */
+    height: 60vh;
+    width: auto;
+  }
+  
+  /* Book Button  */
+  .book-ticket button {
+    width: 100%;
+    background-color: #1a2b7f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-ticket button:hover {
+    background-color: #0056b3;
+  }
+
+
+  
+  /* Mobile view */
+@media only screen and (max-width:820px){
+    body,
+    .ticket-page{
+      width: 100%;
+    }
+  
+    .banner{
+      width: 90%;
+      padding: 3px 10px;
+    }
+
+    .event-details{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .event-details img{
+        margin: 0;
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .event-description h2{
+        font-family: sans-serif;
+        font-size: 40px;
+        margin: 10px auto;
+    }
+
+    .event-description p{
+        font-size: 20px;
+        font-family: 'Lucida Sans Regular';
+    }
+  
+    .book-ticket button{
+        font-size: 25px;
+    }
+  
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      width: 95%;
+    }
+    
+    .ticket-page {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin: 0;
+      padding: 0;
+      margin-top: 40px;
+    }
+    
+    .event-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    .event-image {
+      width: 350px;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    
+    .event-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+      width: 90%;
+      margin-left: 0;
+    }
+    
+    .event-description h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    
+    .event-description p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    
+    .event-description i {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+    
+    .book-ticket {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+    .book-ticket button {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .book-ticket button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 104, 201, 0.993);
+    }
+    
+    #ticketForm {
+      display: none;
+    }
+  }
+  
